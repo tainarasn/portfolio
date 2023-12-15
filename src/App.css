@@ -52,6 +52,14 @@
     font-family: Teko;
     src: url("../src/assets/fonts/Teko-VariableFont_wght.ttf");
 }
+@font-face {
+    font-family: Lucidity;
+    src: url("../src/assets/fonts/FontsFree-Net-lucidity-condensed.ttf");
+}
+@font-face {
+    font-family: Chau;
+    src: url("../src/assets/fonts/ChauPhilomeneOne-Regular.ttf");
+}
 
 /* @font-face {
   font-family: Montserrat;
@@ -62,6 +70,11 @@
 @font-face {
     font-family: Teko;
     src: url("../src/assets/fonts/Teko-VariableFont_wght.ttf");
+    font-weight: bold;
+}
+@font-face {
+    font-family: Abibas;
+    src: url("../src/assets/fonts/Abibas.ttf");
     font-weight: bold;
 }
 

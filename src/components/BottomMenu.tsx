@@ -19,8 +19,18 @@ export const BottomMenu: React.FC<BottomMenuProps> = ({}) => {
         >
             <Avatar src={image1} variant="rounded" sx={{ width: "4.5vw", height: "4.5vw" }} />
             <Box sx={{ flexDirection: "column" }}>
-                <p style={{ fontSize: "1.3vw", letterSpacing: "0.1vw", fontWeight: "800" }}>Pokedéx</p>
-                <p style={{ fontSize: "0.8vw", fontWeight: "400", fontFamily: "Verdana" }}>Dev em Dobro 2022</p>
+                <p
+                    style={{
+                        fontSize: "1.2vw",
+                        letterSpacing: "0.1vw",
+                        fontWeight: "800",
+                        fontFamily: "Lucidity",
+                        textTransform: "none",
+                    }}
+                >
+                    Pokedéx
+                </p>
+                <p style={{ fontSize: "0.9vw", fontWeight: "400", fontFamily: "Chau" }}>Dev em Dobro 2022</p>
             </Box>
         </Box>
     )

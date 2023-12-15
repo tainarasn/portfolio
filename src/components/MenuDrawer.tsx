@@ -51,7 +51,7 @@ export const MenuDrawer: React.FC<MenuDrawerProps> = ({}) => {
         <NavbarLink {...link} key={link.label} active={index === active} onClick={() => setActive(index)} />
     ))
     const projects = folders.map((link, index) => (
-        <Tooltip label={link.label} position="right">
+        <Tooltip label={link.label} position="right" key={index}>
             <img
                 className={classes.link}
                 src={link.icon}
