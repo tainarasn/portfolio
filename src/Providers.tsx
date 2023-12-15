@@ -21,7 +21,9 @@ export const Providers: React.FC<ProvidersProps> = ({ children }) => {
             <ThemeProvider theme={mui_theme}>
                 <SnackbarProvider>
                     <ConfirmDialogProvider>
-                        <MantineProvider theme={mantine_theme}>{children}</MantineProvider>
+                        <MantineProvider theme={mantine_theme} defaultColorScheme="dark">
+                            {children}
+                        </MantineProvider>
                     </ConfirmDialogProvider>
                 </SnackbarProvider>
             </ThemeProvider>
