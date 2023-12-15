@@ -1,5 +1,4 @@
 import { Box } from "@mui/material"
-import { motion, useAnimation } from "framer-motion"
 import Type, { TypeAnimation } from "react-type-animation"
 import React from "react"
 
