@@ -50,15 +50,15 @@
 
 @font-face {
     font-family: Teko;
-    src: url("../src/assets/fonts/Teko-VariableFont_wght.ttf");
+    src: url("../src/assets/fonts/Teko.ttf");
 }
 @font-face {
     font-family: Lucidity;
-    src: url("../src/assets/fonts/FontsFree-Net-lucidity-condensed.ttf");
+    src: url("../src/assets/fonts/Lucidity.ttf");
 }
 @font-face {
     font-family: Chau;
-    src: url("../src/assets/fonts/ChauPhilomeneOne-Regular.ttf");
+    src: url("../src/assets/fonts/Chau.ttf");
 }
 
 /* @font-face {
@@ -69,7 +69,7 @@
 
 @font-face {
     font-family: Teko;
-    src: url("../src/assets/fonts/Teko-VariableFont_wght.ttf");
+    src: url("../src/assets/fonts/Teko.ttf");
     font-weight: bold;
 }
 @font-face {
