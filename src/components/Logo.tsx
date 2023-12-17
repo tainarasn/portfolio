@@ -1,5 +1,5 @@
 import { Box } from "@mui/material"
-import Type, { TypeAnimation } from "react-type-animation"
+import { TypeAnimation } from "react-type-animation"
 import React from "react"
 
 interface LogoProps {}

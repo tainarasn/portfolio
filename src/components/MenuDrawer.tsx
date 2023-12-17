@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { Center, Tooltip, UnstyledButton, Stack, rem } from "@mantine/core"
+import {  Tooltip, UnstyledButton, Stack, rem } from "@mantine/core"
 import image1 from "../assets/cartoons/7aRby8A2gmzW.png"
 import image2 from "../assets/cartoons/DALL·E 2023-11-15 20.50.19 - Create multiple drawings of a young woman with long reddish-brown hair and a few freckles in the style of the graphic shown. The illustrations should .png"
 import image3 from "../assets/cartoons/R1b90Krw5WGX.png"
