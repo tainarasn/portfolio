@@ -1,4 +1,5 @@
 {
+    "homepage": "https://tainarasn.github.io/portfolio",
     "name": "portfolio",
     "private": true,
     "version": "0.0.0",
@@ -27,7 +28,7 @@
         "burgos-snackbar": "^2.1.0",
         "formik": "^2.4.5",
         "framer-motion": "^10.16.16",
-        "gh-pages": "^6.1.0",
+        "gh-pages": "^6.1.1",
         "postcss": "^8.4.32",
         "postcss-simple-vars": "^7.0.1",
         "react": "^18.2.0",
@@ -48,6 +49,5 @@
         "eslint-plugin-react-refresh": "^0.4.4",
         "typescript": "^5.2.2",
         "vite": "^5.0.10"
-    },
-    "homepage": "https://tainarasn.github.io/portfolio"
+    }
 }
