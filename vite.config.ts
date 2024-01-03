@@ -7,4 +7,5 @@ export default defineConfig({
     build: {
         chunkSizeWarningLimit: 1000, // Ajuste o limite para um valor adequado
     },
+    base: "/portfolio",
 })

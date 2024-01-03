@@ -7,7 +7,6 @@ import { Logo } from "../components/Logo"
 import avatar from "../assets/avatar/1.png"
 import { Card } from "../components/Card"
 import { IconPinned } from "@tabler/icons-react"
-
 import age from "../assets/folders/age.jpg"
 import card from "../assets/folders/card.jpg"
 import mini from "../assets/folders/mini.png"
