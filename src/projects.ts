@@ -16,14 +16,14 @@ const projetos: Project[] = [
     },
     {
         id: 2,
-        name: "WiS - Women In Science",
+        name: "Women In Science",
         cover: wis,
         description: "Website desnevolvido para o evento Internacional Woman In Science, sediado na UTFPR - Curitiba.",
         location: "https://utfpr.curitiba.br/mulheresnasteam/",
     },
     {
         id: 3,
-        name: "GenPassword",
+        name: "Password",
         cover: password,
         description: "Gerador de senhas fortes e seguras.",
         location: "https://password.tainovaes.dev",

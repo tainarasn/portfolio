@@ -9,6 +9,7 @@ import image5 from "../assets/cartoons/R1b90Krw5WGX.png"
 import { IconHome2, IconUser, IconBrandGithubFilled, IconBrandLinkedin } from "@tabler/icons-react"
 import classes from "../styles/menu.module.css"
 import { Box } from "@mui/material"
+import projetos from "../projects"
 
 interface NavbarLinkProps {
     icon: typeof IconHome2
@@ -50,16 +51,30 @@ export const MenuDrawer: React.FC<MenuDrawerProps> = ({}) => {
     const links = mockdata.map((link, index) => (
         <NavbarLink {...link} key={link.label} active={index === active} onClick={() => setActive(index)} />
     ))
-    const projects = folders.map((link, index) => (
-        <Tooltip label={link.label} position="right" key={index}>
-            <img
-                className={classes.link}
-                src={link.icon}
-                key={index}
-                style={{ borderRadius: "0.5vw", marginBottom: "0.8vw" }}
-            />
-        </Tooltip>
-    ))
+    const projects = projetos.map((link, index) => {
+        const uppercaseLetters = link.name
+            .split("")
+            .filter((char) => char === char.toUpperCase())
+            .join("")
+        return (
+            <Tooltip label={link.name} position="right" key={index}>
+                <Box
+                    sx={{
+                        fontFamily: "Chau",
+                        fontSize: "1.5rem",
+                        bgcolor: "#2b2b2c",
+                        width: 1,
+                        height: "8vh",
+                        borderRadius: "0.5vw",
+                        alignItems: "center",
+                        justifyContent: "center",
+                    }}
+                >
+                    {uppercaseLetters}
+                </Box>
+            </Tooltip>
+        )
+    })
 
     return (
         <Box sx={{ gap: "0.8vw", height: "99%", justifyContent: "center" }}>
@@ -70,9 +85,9 @@ export const MenuDrawer: React.FC<MenuDrawerProps> = ({}) => {
                     </Stack>
                 </Box>
             </nav>
-            <Box className={classes.navbar2} sx={{ justifyContent: "space-between", height: "82%" }}>
-                <Box className={classes.navbarMain} sx={{ overflowY: "auto", height: "100%" }}>
-                    <Stack justify="center" gap={0} style={{ height: "20vw" }}>
+            <Box className={classes.navbar2} sx={{ justifyContent: "space-between", height: "100%" }}>
+                <Box className={classes.navbarMain} sx={{ height: "100%" }}>
+                    <Stack justify="center" gap={0} style={{ height: "23vw", gap: "0.5vw", overflowY: "auto" }}>
                         {projects}
                     </Stack>
                 </Box>
