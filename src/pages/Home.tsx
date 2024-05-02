@@ -4,14 +4,14 @@ import React, { useState } from "react"
 import { MenuDrawer } from "../components/MenuDrawer"
 import { BottomMenu } from "../components/BottomMenu"
 import { Logo } from "../components/Logo"
-import avatar from "../assets/avatar/1.png"
+import avatar from "../assets/avatar/3.png"
 import { Card } from "../components/Card"
 import { IconPinned } from "@tabler/icons-react"
-import age from "../assets/folders/age.jpg"
-import card from "../assets/folders/card.jpg"
-import mini from "../assets/folders/mini.png"
-import hero from "../assets/folders/hero.png"
-import pokedex from "../assets/folders/pokedex.png"
+import languages from "../assets/languages/languages2.png"
+
+import { Grid } from "@mui/material"
+import projetos from "../projects"
+import { CardProfile } from "../components/CardProfile"
 
 interface HomeProps {}
 
@@ -43,12 +43,13 @@ export const Home: React.FC<HomeProps> = ({}) => {
                             p: "3vw",
                             // gap: "1vw",
                             flexDirection: "column",
+                            justifyContent: "space-between",
                         }}
                     >
-                        <Box sx={{ flexDirection: "row", height: "70%", alignItems: "center" }}>
+                        <Box sx={{ width: 1, flexDirection: "row", height: "70%", alignItems: "center" }}>
                             <Box
                                 sx={{
-                                    width: "80%",
+                                    width: "65%",
                                     height: "100%",
                                     flexDirection: "column",
                                     alignItems: "center",
@@ -108,26 +109,28 @@ export const Home: React.FC<HomeProps> = ({}) => {
                                     )}
                                 </Box>
                             </Box>
-                            <Box sx={{ width: "35%", height: "100%", flexDirection: "column", gap: "0.8vw" }}></Box>
+                            <Box sx={{ width: "45%", height: "100%", flexDirection: "column", gap: "0.8vw" }}>
+                                <img src={languages} style={{ width: "28vw" }} />
+                            </Box>
                         </Box>
-                        <Box sx={{ height: "70%", gap: "0.8vw" }}>
-                            <Box sx={{ flexDirection: "row", gap: "0.1vw", alignItems: "center" }}>
+                        <Box sx={{ width: 1, gap: "0.8vw" }}>
+                            <Box sx={{ width: 1, flexDirection: "row", gap: "0.1vw", alignItems: "center" }}>
                                 <IconPinned />
-                                <h3>Pinned</h3>
+                                <h3>Fixados</h3>
                             </Box>
-                            <Box sx={{ width: "100%", height: "40%", flexDirection: "row", gap: "0.8vw", margin: 0 }}>
-                                <Card
-                                    title="Password generator app"
-                                    folder={mini}
-                                    style={{ width: "33%", height: "100%" }}
-                                />
-                                <Card title="Be The Hero" folder={hero} style={{ width: "33%", height: "100%" }} />
-                                <Card title="Pokedéx" folder={pokedex} style={{ width: "33%", height: "100%" }} />
-                            </Box>
-                            <Box sx={{ width: "100%", height: "40%", flexDirection: "row", gap: "0.8vw" }}>
-                                <Card title="Calculator Age" folder={age} style={{ width: "33%", height: "100%" }} />
-                                <Card title="Mini Portfólio" folder={mini} style={{ width: "33%", height: "100%" }} />
-                                <Card title="Interactive card form" folder={card} style={{ width: "33%", height: "100%" }} />
+
+                            <Box sx={{ width: 1, gap: "0.8vw" }}>
+                                <Grid
+                                    container
+                                    spacing={0}
+                                    sx={{ width: "100%", flexDirection: "row", gap: "0.8vw", margin: 0 }}
+                                >
+                                    {projetos.slice(0, 6).map((project, index) => (
+                                        <Grid item xs={3.9} key={index}>
+                                            <Card project={project} />
+                                        </Grid>
+                                    ))}
+                                </Grid>
                             </Box>
                         </Box>
                     </Box>
@@ -143,7 +146,7 @@ export const Home: React.FC<HomeProps> = ({}) => {
                     >
                         <Box sx={{ flexDirection: "column", gap: "0.5vw" }}>
                             <img src={avatar} style={{ width: "100%", height: "12vw" }} />
-                            <p style={{ fontFamily: "Lucidity", textAlign: "center", fontSize: "2vw" }}>Tainara Silva</p>
+                            <p style={{ fontFamily: "Chau", textAlign: "center", fontSize: "2vw" }}>Tainara Silva</p>
                             <p style={{ fontFamily: "Chau", textAlign: "center", fontSize: "1.2vw" }}>Estudante</p>
                         </Box>
                         <p style={{ fontFamily: "Chau", textAlign: "center", fontSize: "1vw" }}>Engenharia de computação</p>
@@ -157,45 +160,50 @@ export const Home: React.FC<HomeProps> = ({}) => {
                                 gap: "0.8vw",
                             }}
                         >
-                            <Card
+                            <CardProfile
                                 title="Perfil"
                                 folder={""}
                                 variant
                                 style={{ height: "15%" }}
                                 sxTitle={{ fontSize: "1.1vw" }}
                                 sxAvatar={{ borderRadius: "0.5vw" }}
+                                location=""
                             />
-                            <Card
+                            <CardProfile
                                 title="Educação"
                                 folder={""}
                                 variant
                                 style={{ height: "15%" }}
                                 sxTitle={{ fontSize: "1.1vw" }}
                                 sxAvatar={{ borderRadius: "0.5vw" }}
+                                location=""
                             />
-                            <Card
+                            <CardProfile
                                 title="Habilidades"
                                 folder={""}
                                 variant
                                 style={{ height: "15%" }}
                                 sxTitle={{ fontSize: "1.1vw" }}
                                 sxAvatar={{ borderRadius: "0.5vw" }}
+                                location=""
                             />
-                            <Card
+                            <CardProfile
                                 title="Profissional"
                                 folder={""}
                                 variant
                                 style={{ height: "15%" }}
                                 sxTitle={{ fontSize: "1.1vw" }}
                                 sxAvatar={{ borderRadius: "0.5vw" }}
+                                location=""
                             />
-                            <Card
+                            <CardProfile
                                 title="Mais informações"
                                 folder={""}
                                 variant
                                 style={{ height: "15%" }}
                                 sxTitle={{ fontSize: "1.1vw" }}
                                 sxAvatar={{ borderRadius: "0.5vw" }}
+                                location=""
                             />
                         </Box>
                     </Box>
